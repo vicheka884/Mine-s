@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff8f0;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1em 0; */
+    text-align: center;
+}
+header{
+    display: flex;
+}
+h1{
+    margin-left: 20px;
+}
+nav{
+    display: flex;
+}
+nav a {
+    margin: 0 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+  
+
+}
+.crad-picture{
+    border: #45a049;
+    display: flex;
+}
+
+.crad-text1 {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+/* Laptop screens (992px - 1200px) */
+@media (max-width: 1200px) and (min-width: 992px) {
+    #About-us {
+        height: auto;
+        padding: 20px 40px;
+    }
+
+    .crad-text1 {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+
+    .crad-picture img {
+        width: 80%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    #About-us {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .crad-text1 {
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    .crad-text1 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .crad-picture img {
+        width: 80%;
+    }
+}
