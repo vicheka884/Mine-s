@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(232, 239, 243, 0.949);
+    background: #fff8f0;
     color: #333;
 }
 
@@ -65,7 +65,8 @@ nav a:hover {
     color: #555;
     margin-bottom: 30px;
 }
-.image{
+
+.image {
     justify-content: start;
 }
 
@@ -105,6 +106,91 @@ main {
     width: 200px;
     border-radius: 5px;
 }
+
+/* ✅ Laptop screens (1025px–1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .content h1 {
+        font-size: 42px;
+    }
+
+    .products {
+        justify-content: space-evenly;
+    }
+}
+
+/* ✅ Tablets (768px–1024px) */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 5%;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image {
+        margin-top: 20px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .image img {
+        max-width: 80%;
+    }
+
+    .products {
+        justify-content: center;
+    }
+
+    .product {
+        width: 45%;
+    }
+}
+
+/* ✅ Mobile Phones (up to 768px) */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* -----------------------footer---------------------------- */
 footer {
     background: #fcaba4;
@@ -161,3 +247,45 @@ footer {
     font-size: 14px;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .footer-column {
+        width: 23%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-column {
+        width: 45%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 90%;
+        text-align: center;
+    }
+
+    .footer-column h3 {
+        font-size: 18px;
+    }
+
+    .footer-column ul li {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}

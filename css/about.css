@@ -5,6 +5,7 @@ body {
     color: #333;
     background: #fff8f0;
 }
+
 header {
     background-color: #fcaba4;
     color: white;
@@ -28,14 +29,17 @@ nav a {
     display: flex;
     align-items: center;
 }
-main h1{
+
+main h1 {
     text-align: center;
 }
-.crad-picture{
+
+.crad-picture {
     display: flex;
     justify-content: space-between;
-    
+
 }
+
 .crad-text1 {
     width: 40%;
     font-size: 24px;
@@ -45,9 +49,84 @@ main h1{
     text-align: justify;
     margin-left: 10px;
 }
-.crad-img1{
+
+.crad-img1 {
     width: 90px;
 }
-.crad-text1 p{
+
+.crad-text1 p {
     margin-right: 26px;
+}
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    .crad-picture {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crad-text1,
+    .crad-img1 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .crad-text1 {
+        font-size: 20px;
+        margin-left: 0;
+    }
+}
+
+/* Phones (landscape and portrait) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    .crad-text1 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .crad-img1 {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding-left: 10px;
+    }
+
+    .crad-text1 {
+        font-size: 16px;
+    }
+
+    main h1 {
+        font-size: 20px;
+    }
 }
