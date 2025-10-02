@@ -2,46 +2,94 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #fff8f0;
+    background-color: rgba(232, 239, 243, 0.949);
     color: #333;
 }
 
 header {
-    background-color: #ff6f61; 
+    background-color: #fcaba4;
     color: white;
     display: flex;
     justify-content: space-between;
     /* padding: 1em 0; */
     text-align: center;
 }
-h1{
+
+h1 {
     margin-left: 20px;
 }
-nav{
+
+nav {
     display: flex;
 }
+
 nav a {
     margin: 0 10px;
     color: white;
     display: flex;
     align-items: center;
-  
-
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-main {
-    padding: 20px;
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    min-height: 100vh;
 }
 
-.hero {
-    text-align: center;
-    height: 70vh;
-    background: url(/image/friut\ background.jpg) no-repeat center center/cover;
+.content {
+    height: 80vh;
+    max-width: 50%;
+}
 
+.content h5 {
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    font-size: 48px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+.image{
+    justify-content: start;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #4caf50;
+}
+
+.image img {
+    max-width: 500px;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
 }
 
 .products {
@@ -57,15 +105,13 @@ main {
     width: 200px;
     border-radius: 5px;
 }
-
+/* -----------------------footer---------------------------- */
 footer {
-    background: #ff6f61;
+    background: #fcaba4;
     color: white;
     text-align: center;
-    padding: 1em 0;
-    margin-top: 20px;
-}
 
+}
 
 .footer-container {
     display: flex;
@@ -115,26 +161,3 @@ footer {
     font-size: 14px;
 }
 
-@media (min-width: 993px) {
-    .footer-column {
-        width: 22%;
-    }
-}
-
-@media (max-width: 992px) and (min-width: 601px) {
-    .footer-column {
-        width: 45%;
-    }
-}
-
-@media (max-width: 600px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-column {
-        width: 100%;
-    }
-}
