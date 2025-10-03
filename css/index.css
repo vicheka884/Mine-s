@@ -11,13 +11,16 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
-    /* padding: 1em 0; */
     text-align: center;
 }
 
-h1 {
+/* h1 {
     margin-left: 20px;
+} */
+.logo img{
+    width: 120px;
 }
+
 
 nav {
     display: flex;

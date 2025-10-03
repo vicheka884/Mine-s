@@ -20,9 +20,10 @@ header {
     justify-content: space-evenly;
 }
 
-h1 {
-    margin-left: 20px;
+.logo img{
+    width: 120px;
 }
+
 
 nav {
     display: flex;

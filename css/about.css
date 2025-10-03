@@ -13,9 +13,8 @@ header {
     justify-content: space-between;
     text-align: center;
 }
-
-h1 {
-    margin-left: 20px;
+.logo img{
+    width: 120px;
 }
 
 nav {
