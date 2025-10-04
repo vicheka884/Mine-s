@@ -38,12 +38,9 @@ nav a {
 
 }
 
-.location form {
+.location {
     margin-bottom: 20px;
 }
-/* .location form iframe{
-    margin-right: 50px;
-} */
 
 .form-container {
     background: #fff;
